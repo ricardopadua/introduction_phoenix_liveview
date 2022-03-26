@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  db:
+    image: 'postgres:13.0-alpine' 
+    container_name: db
+    restart: always
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: introduction_phoenix_liveview_dev
+      POSTGRES_USER: postgres
+      PGDATA: /tmp
+    ports:
+      - '5432:5432'
+    hostname: db
+    profiles: ["debug", "dev"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
