@@ -6,13 +6,23 @@ defmodule IntroductionPhoenixLiveViewWeb.PageLive do
     socket =
       socket
       |> assign(%{
-        nome: "Ricardo",
-        sobrenome: "Padua",
-        idade: 80,
-        numero_form: Enum.random(0..100),
-        incidents: 1
+        email: "",
+        department: "",
+        subject: "",
+        message: ""
       })
 
     {:ok, socket}
+  end
+
+  @impl true
+  def handle_event("submit", params, socket) do
+    socket =
+      socket
+      |> assign(:email, params["email"])
+      |> assign(:department, params["department"])
+      |> assign(:subject, params["subject"])
+      |> assign(:message, params["message"])
+      {:noreply, socket}
   end
 end
