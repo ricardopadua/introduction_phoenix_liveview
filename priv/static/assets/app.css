@@ -717,6 +717,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto
 }
 
+.-ml-8{
+  margin-left: -2rem
+}
+
+.mb-1{
+  margin-bottom: 0.25rem
+}
+
+.block{
+  display: block
+}
+
 .inline-block{
   display: inline-block
 }
@@ -737,6 +749,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: contents
 }
 
+.hidden{
+  display: none
+}
+
 .h-40{
   height: 10rem
 }
@@ -751,6 +767,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-6{
   height: 1.5rem
+}
+
+.h-auto{
+  height: auto
+}
+
+.h-10{
+  height: 2.5rem
+}
+
+.h-48{
+  height: 12rem
+}
+
+.h-full{
+  height: 100%
 }
 
 .w-full{
@@ -769,6 +801,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem
 }
 
+.w-2\/3{
+  width: 66.666667%
+}
+
+.w-10{
+  width: 2.5rem
+}
+
+.w-1\/3{
+  width: 33.333333%
+}
+
 .max-w-screen-2xl{
   max-width: 1536px
 }
@@ -781,8 +825,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 20rem
 }
 
+.max-w-screen-lg{
+  max-width: 1024px
+}
+
 .flex-shrink-0{
   flex-shrink: 0
+}
+
+.shrink-0{
+  flex-shrink: 0
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.flex-col{
+  flex-direction: column
 }
 
 .items-center{
@@ -799,6 +859,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-4{
   gap: 1rem
+}
+
+.gap-2\.5{
+  gap: 0.625rem
+}
+
+.gap-2{
+  gap: 0.5rem
+}
+
+.gap-12{
+  gap: 3rem
+}
+
+.gap-1{
+  gap: 0.25rem
+}
+
+.gap-8{
+  gap: 2rem
+}
+
+.overflow-hidden{
+  overflow: hidden
 }
 
 .rounded{
@@ -843,6 +927,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 237 213 / var(--tw-bg-opacity))
 }
 
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity))
+}
+
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover
+}
+
+.object-center{
+  -o-object-position: center;
+     object-position: center
+}
+
 .p-4{
   padding: 1rem
 }
@@ -853,6 +957,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-1{
   padding: 0.25rem
+}
+
+.p-8{
+  padding: 2rem
+}
+
+.p-3{
+  padding: 0.75rem
 }
 
 .py-6{
@@ -888,6 +1000,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem
 }
 
 .text-center{
@@ -966,6 +1103,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(209 213 219 / var(--tw-text-opacity))
 }
 
+.text-indigo-500{
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity))
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity))
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline
@@ -974,6 +1121,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
@@ -1208,6 +1367,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 244 246 / var(--tw-bg-opacity))
 }
 
+.hover\:bg-gray-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity))
+}
+
+.hover\:bg-gray-50:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity))
+}
+
 .hover\:text-indigo-500:hover{
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity))
@@ -1251,9 +1420,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(67 56 202 / var(--tw-bg-opacity))
 }
 
+.active\:bg-gray-100:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+}
+
 .active\:text-indigo-600:active{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity))
+}
+
+.active\:text-indigo-700:active{
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity))
+}
+
+.active\:text-gray-700:active{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity))
+}
+
+.group:hover .group-hover\:bg-indigo-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--tw-bg-opacity))
+}
+
+.group:active .group-active\:bg-indigo-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity))
 }
 
 @media (prefers-color-scheme: dark){
@@ -1322,9 +1516,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr))
   }
 
+  .sm\:flex-row{
+    flex-direction: row
+  }
+
+  .sm\:justify-center{
+    justify-content: center
+  }
+
   .sm\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem
+  }
+
+  .sm\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem
   }
 
   .sm\:text-base{
@@ -1342,9 +1549,45 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 1.5rem
   }
 
+  .md\:mb-8{
+    margin-bottom: 2rem
+  }
+
+  .md\:mb-12{
+    margin-bottom: 3rem
+  }
+
+  .md\:h-12{
+    height: 3rem
+  }
+
+  .md\:w-12{
+    width: 3rem
+  }
+
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem
+  }
+
+  .md\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem
+  }
+
+  .md\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem
   }
 
   .md\:text-lg{
@@ -1356,12 +1599,37 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1rem;
     line-height: 1.5rem
   }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:block{
+    display: block
+  }
+
+  .lg\:flex{
+    display: flex
+  }
+
+  .lg\:hidden{
+    display: none
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start
+  }
+
   .lg\:py-1{
     padding-top: 0.25rem;
     padding-bottom: 0.25rem
+  }
+
+  .lg\:pb-12{
+    padding-bottom: 3rem
   }
 
   .lg\:text-3xl{
